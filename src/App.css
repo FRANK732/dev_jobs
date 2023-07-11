@@ -1,0 +1,1486 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sora&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: rgb(0, 0, 0);
+  --white: #f2f2f2;
+}
+
+body {
+
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --fullText: #000000;
+  --background-color: var(--white);
+  --text-color: var(--blue);
+  --background: #ffffff
+}
+
+body.dark {
+  --fullText: #ffffff;
+  --background-color: var(--blue);
+  --text-color: var(--white);
+  --background: #121721;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: -3;
+  /* background-color: var(--background); */
+}
+
+
+/* Cards */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+
+.main{
+top:150px;
+position: relative;  
+width: 350px;
+height: 253px;
+margin-left : 35px;
+margin-top : 20px;
+/* background-color: var(--background); */
+}
+
+
+.rectangle {
+cursor: pointer; 
+position: absolute;
+bottom: 0px;
+margin-top: 15px;
+width: 350px;
+height: 228px;
+background: var(--background);
+border-radius: 6px;
+}
+
+.innergroup {
+position: absolute;
+margin-top: 49px;
+margin-left: 32px;
+width: 286;
+height: 147;
+}
+
+.postedContract {
+
+
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #6E8098;
+}
+
+.role { 
+  padding-top: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+
+.company {
+padding-top: 12px;  
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #6E8098;
+}
+
+.location {
+padding-top: 44px;  
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+color: #343c9a;
+}
+
+.logo{
+  border: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  position:absolute;
+  margin-left: 32px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: aqua;
+
+}
+
+.svg {
+  width: auto;
+  height: auto;
+}
+
+
+
+/* Detail */
+
+
+.desc_rectangle {
+  position: absolute;
+    margin: 30px;
+    width: 730px;
+    height: 1100px;
+    top: 285px;
+    background-color:var(--background);
+  }
+
+  .desc_innergroup {
+    background-color: var(--background);
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 48px;
+    width: 639px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc_postedContract {
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6e8098;
+  }
+
+  .desc_role {
+    padding-top: 6px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+
+    color: var(--text-color);
+  }
+
+  .desc_location {
+    padding-left: 3px;
+    padding-top: 9px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #5964e0;
+  }
+
+  .desc_button {
+    cursor: pointer;
+    border-style: none;
+    position: absolute;
+    width: 141px;
+    height: 48px;
+    left: 496px;
+    top: 20px;
+    background-color: #5964e0;
+  }
+
+  .desc_button.df {
+    position: static;
+  }
+
+  .desc_button_text {
+    color: white;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .desc_description {
+    margin-top: 40px;
+    width: 639px;
+    height: auto;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6e8098;
+  }
+
+  .desc_requirements {
+    margin-top: 40px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: var(--text-color);
+  }
+
+
+
+
+  @media only screen and (max-width: 800px)
+  {
+
+    .desc_rectangle {
+      position: absolute;
+        margin: 30px;
+        width: min(90%,689px);
+        height: 1450px;
+        top: 285px;
+        background-color:var(--background);
+      }
+    
+      .desc_innergroup {
+        background-color: var(--background);
+        position: absolute;
+        margin-top: 48px;
+        margin-left: 48px;
+        width: min(90%,689px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .desc_postedContract {
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6e8098;
+      }
+    
+      .desc_role {
+        padding-top: 6px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        color: var(--text-color);
+      }
+    
+      .desc_location {
+        padding-left: 3px;
+        padding-top: 9px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #5964e0;
+      }
+    
+      .desc_button {
+        cursor: pointer;
+        border-style: none;
+        position: absolute;
+        width: 141px;
+        height: 48px;
+        left: 470px;
+        top: 20px;
+        background-color: #5964e0;
+      }
+    
+      .desc_button.df {
+        position: static;
+      }
+    
+      .desc_button_text {
+        color: white;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+      }
+    
+      .desc_description {
+        margin-top: 40px;
+        width: min(96%,689px);
+        height: auto;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6e8098;
+      }
+    
+      .desc_requirements {
+        margin-top: 40px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: var(--text-color);
+      }
+
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 500px)
+  {
+    .desc_rectangle {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        width: min(90%,327px);
+        height: 2500px;
+        top: 320px;
+        background-color: var(--background);
+      }
+    
+      .desc_innergroup {
+        background-color: var(--background);
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 24px;
+        margin-right: 24px;
+        width: min(90%,327px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .desc_postedContract {
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6e8098;
+      }
+    
+      .desc_role {
+        padding-top: 6px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: var(--text-color);
+
+      }
+    
+      .desc_location {
+        padding-left: 3px;
+        padding-top: 9px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #5964e0;
+      }
+    
+      .desc_button {
+        cursor: pointer;
+        border-style: none;
+        width: min(90%,279px);
+        height: 48px;
+        background-color: #5964e0;
+        border-radius: 5px;
+        position: relative;
+        left: 0px;
+      }
+    
+    
+    
+      .desc_button_text {
+        color: white;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+      }
+    
+      .desc_description {
+        margin-top: 40px;
+        width: min(90%,327px);
+        height: auto;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6e8098;
+      }
+    
+      .desc_requirements {
+        margin-top: 40px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: var(--text-color);
+      }
+  }
+
+
+
+
+
+  /* Footer */
+
+
+  .footer_container {
+
+  width: min(90%,1400px);
+  margin-inline: auto;  
+  position: relative;
+  background-color: var(--background);
+  width: 1300px;
+  height: 86px;
+  top: 1490px;
+  padding-bottom: 100px;
+  }
+  
+  
+  .footer_rectangle {
+        padding-left: 31%;    
+        width: 1000px;
+        height: 96px;
+        left: 535px;
+        right: 355px;
+        background-color: var(--background);
+      }
+    
+      .footer_role {
+          padding-top: 23px;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 25px;
+          color: var(--text-color);
+        }
+  
+        .footer_company {
+          padding-top: 12px;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+      
+          color: #6E8098;
+        }
+      
+        .footer_button {
+          cursor: pointer;
+          border-style: none;
+          position: absolute;
+          
+          width: 141px;
+          height: 48px;
+          left: 1032px;
+          top: 25px;
+          background: #5964E0;
+          border-radius: 5px;
+        }
+  
+        .footer_button_text {
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+  
+  
+  
+        @media only screen and (max-width: 800px)
+        {
+  
+          .footer_container {
+  
+          width: min(100%,800px);
+          margin-inline: auto;  
+          position: absolute;
+          background-color: var(--background);
+          height: 96px;
+          top: 1820px;
+          padding-bottom: 100px;
+          }
+          
+          
+          .footer_rectangle {
+                padding-left: 8%;    
+                width: min(90%,800px);
+                height: 96px;
+                left: 0px;
+                right: 0px;
+                background-color: var(--background);
+              }
+            
+              .footer_role {
+                  padding-top: 23px;
+                  font-family: "Kumbh Sans";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 25px;
+                  color: #19202d;
+                }
+          
+                .footer_company {
+                  padding-top: 12px;
+                  font-family: "Kumbh Sans";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 20px;
+              
+                  color: #6E8098;
+                }
+              
+                .footer_button {
+                  cursor: pointer;
+                  border-style: none;
+                  position: absolute;
+                  width: 141px;
+                  height: 48px;
+                  left: 76%;
+                  top: 25px;
+                  background: #5964E0;
+                  border-radius: 5px;
+                }
+          
+                .footer_button_text {
+                  font-family: 'Kumbh Sans';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 20px;
+                  text-align: center;
+                  color: #FFFFFF;
+                }
+  
+        }
+  
+  
+  
+  
+        @media only screen and (max-width: 500px)
+    {
+  
+        .footer_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: min(100%,500px);
+        margin-inline: auto;  
+        position: absolute;
+        background-color: var(--background);
+        height: 96px;
+        top: 2925px;
+        padding-bottom: 100px;
+      }
+      
+      
+      .footer_rectangle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0%;    
+            width: min(100%,500px);
+            height: 96px;
+            left: 0px;
+            right: 0px;
+            background-color: var(--background);
+          }
+        
+          .footer_role {
+            /* visibility: hidden; */
+              padding-top: 23px;
+              padding-bottom: 10px;
+              font-family: "Kumbh Sans";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 25px;
+              color: var(--text-color);
+  
+            }
+      
+            .footer_company {
+              visibility: hidden;
+              padding-top: 12px;
+              font-family: "Kumbh Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+          
+              color: var(--background);
+            }
+          
+            .footer_button {
+              cursor: pointer;
+              border-style: none;
+              position: absolute;
+              width: min(100%,327px);
+              height: 48px;
+              left: 7%;
+              top: 25px;
+              background: #5964E0;
+              border-radius: 5px;
+              
+            }
+      
+            .footer_button_text {
+              font-family: 'Kumbh Sans';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: center;
+              color: #FFFFFF;
+            }
+      
+      
+  
+    }
+  
+
+
+
+    /* Header */
+
+
+
+.container{
+      position: absolute;
+      width: 730px;
+      height: 140px;
+      top: 90px;
+      background-color: var(--background);
+  }
+  .row{
+      height: 140px;
+  }
+  
+  .scoot-box{
+      position: absolute;
+      width: 730px;
+      height: 140px;
+      left: 0px;
+      top: 0;
+      border-radius: 0px 0px 0px 6px;
+  }
+      
+  .scoot-name-orange{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      left: 0px;
+  }
+  
+  .btn-primary{
+      cursor: pointer;
+      border-style: none;
+      position: absolute;
+      width: 147px;
+      height: 48px;
+      left: 540px;
+      top: 40px;
+      border-radius: 5px;
+      background-color: #dde1f8;
+     
+  }
+  
+  .apply{
+      top: 32px;
+      left: 940px;
+  }
+  .middle{
+      background-color: white;
+  }
+  .middle-text{
+      position: absolute;
+      width: 500px;
+      height: 56px;
+      left: 180px;
+      top: 42px;
+      font-family: 'Kumbh Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+  
+  color: var(--text-color)
+  }
+  .middle-low-text{
+      position: absolute;
+      padding-top: 13px;
+      width: 78px;
+      height: 56px;
+      left: 180px;
+      top: 75px;
+      font-family: 'Kumbh Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #6E8098;
+  }
+ 
+  
+  .button_text {
+      color: #5964E0;
+      font-family: "Kumbh Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+  }
+  
+  .header_svg {
+      width: 70px;
+      height: auto;
+    }
+  
+  
+  
+    @media only screen and (max-width: 800px)
+    {
+  
+      .container{
+          position: absolute;
+          width: min(90%,689px);
+          height: 140px;
+          top: 125px;
+          background-color: var(--background);
+      }
+      .row{
+          height: 140px;
+      }
+      
+      .scoot-box{
+          position: absolute;
+          width: min(90%,689px);
+          height: 140px;
+          left: 0px;
+          top: 0;
+          border-radius: 0px 0px 0px 6px;
+      }
+          
+      .scoot-name-orange{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 140px;
+          height: 140px;
+          left: 0px;
+      }
+      
+      .btn-primary{
+          cursor: pointer;
+          border-style: none;
+          position: absolute;
+          width: 147px;
+          height: 48px;
+          left: 490px;
+          top: 40px;
+          border-radius: 5px;
+          background-color: #dde1f8;
+         
+      }
+      
+      .apply{
+          top: 32px;
+          left: 940px;
+      }
+      .middle{
+          background-color: white;
+      }
+      middle-text{
+          position: absolute;
+          width: 500px;
+          height: 56px;
+          left: 180px;
+          top: 42px;
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30px;
+      
+      color: var(--text-color);
+      }
+      .middle-low-text{
+          position: absolute;
+          padding-top: 13px;
+          width: 78px;
+          height: 56px;
+          left: 180px;
+          top: 75px;
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--text-color);
+      }
+      .bg{
+          background-color:var(--background);
+      }
+      
+      .button_text {
+          color: #5964E0;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+      }
+      
+      .header_svg {
+          width: 70px;
+          height: auto;
+        }
+      
+  
+    }
+  
+  
+  
+  
+  
+    @media only screen and (max-width: 500px)
+    {
+  
+      .container{
+          position: absolute;
+          width: min(90%,327px);
+          height: 220px;
+          top: 95px;
+          background-color: #5964E0;
+          border-radius: 6px;
+      }
+      .row{
+          width: min(100%,327px);
+          height: 195px;
+          background-color: var(--background);
+          position: absolute;
+          bottom: 0px;
+          margin-top: 25px;
+          border-radius: 6px;
+      }
+      
+      .scoot-box{
+          position: absolute;
+          border: 1px;
+          margin-left: 40%;
+          width: 50px;
+          height: 50px;
+          top: 0px;
+          border-radius: 15px;
+          background-color: aqua;
+      }
+          
+      .scoot-name-orange{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position:absolute;
+          border-radius: 15px;
+          width: 50px;
+          height: 50px;
+      }
+      
+      .btn-primary{
+          cursor: pointer;
+          border-style: none;
+          position: absolute;
+          width: 147px;
+          height: 40px;
+          left: 85px;
+          top: 140px;
+          border-radius: 5px;
+          background-color: #dde1f8;
+         
+      }
+      
+      .apply{
+          top: 32px;
+          left: 940px;
+      }
+      .middle{
+          background-color: white;
+      }
+      .middle-text{
+          position: absolute;
+          width: auto;
+          height: 56px;
+          left: 38%;
+          top: 54px;
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30px;
+      
+      color: var(--text-color);
+      }
+      .middle-low-text{
+          position: absolute;
+          padding-top: 13px;
+          width: 78px;
+          height: 56px;
+          left: 25%;
+          top: 80px;
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #6E8098;
+      }
+      .bg{
+          background-color: white;
+      }
+      
+      .button_text {
+          color: #5964E0;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+      }
+      
+      .header_svg {
+          width: auto;
+          height: auto;
+        }
+  
+  
+  
+    }
+  
+
+
+
+
+    /*appNav*/
+
+    .appNav{  
+      top: 0px;
+      position: absolute;
+      background-image: url('/src/assets/desktop/bg-pattern-header.svg');
+      width: min(100%,1600px);
+      margin-inline: auto;
+      height: 120px;
+      /* left: 5.5%; */
+      display: flex;
+      /* align-items: center; */
+      }
+      
+      .switch_container {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width: 800px;
+        height: 40px;
+      
+      }
+      
+      .switch {
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        left: 580px;
+        top:26px;
+      }
+        /* Hide default HTML checkbox */
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+      
+        /* The slider */
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 50px;
+          right: 0;
+          bottom: 0;
+          background-color: #FFFFFF;
+          transition: .4s;
+          width: 48px;
+          height: 24px;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 14px;
+          width: 14px;
+          left: 7px;
+          bottom: 4px;
+          top: 5px;
+          background-color: #939BF4;
+          transition: .4s;
+        }
+        
+        input:checked + .slider {
+          background-color: #FFFFFF;
+          
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(20px);
+          -ms-transform: translateX(20px);
+          transform: translateX(20px);
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      
+      
+        .sun {
+          background-image: url('/src/assets/desktop/icon-sun.svg');
+          position: absolute;
+          left: 599px;
+          top: 29px;
+        }
+      
+        .moon {
+          size: 20px;
+          position: absolute;
+          left: 689px;
+          top: 30px;
+        }
+      
+        .name {
+          position: relative;
+          left: 165px;
+          top: 25px;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 15px;
+          color: #FFFFFF;
+      
+        }
+      
+      
+        @media only screen and (max-width: 500px)
+        {
+      
+          .aaa{  
+            position: absolute;
+            height: 136px;
+            top: 0px;
+            background: #5964E0;
+            align-items: center;
+            border-radius: 0;
+            width: min(100%,500px);
+            }
+            
+            .switch {
+              position: absolute;
+              display: inline-block;
+              width: 60px;
+              height: 32px;
+              left: 630px;
+              top:20px;
+            }
+              /* Hide default HTML checkbox */
+              .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+            
+              /* The slider */
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 50px;
+                right: 0;
+                bottom: 0;
+                background-color: #FFFFFF;
+                transition: .4s;
+                width: 48px;
+                height: 24px;
+              }
+              
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 7px;
+                bottom: 4px;
+                top: 5px;
+                background-color: #939BF4;
+                transition: .4s;
+              }
+              
+              input:checked + .slider {
+                background-color: #FFFFFF;
+                
+              }
+              
+              input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+              }
+              
+              input:checked + .slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+              }
+              
+              /* Rounded sliders */
+              .slider.round {
+                border-radius: 34px;
+              }
+              
+              .slider.round:before {
+                border-radius: 50%;
+              }
+            
+            
+              .sun {
+                size: 20px;
+                position: absolute;
+                left: 649px;
+                top: 23px;
+              }
+            
+              .moon {
+                size: 20px;
+                position: absolute;
+                left: 739px;
+                top: 24px;
+              }
+            
+              .name {
+                position: absolute;
+                left: 24px;
+                top: 10px;
+                font-family: "Kumbh Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 35px;
+                color: #FFFFFF;
+            
+              }
+            
+      
+        }
+
+
+
+
+
+
+/* SearchBar */
+
+.search-bar {
+  position: absolute;
+  height: 75px;
+  left: auto;
+  margin-left: 50px;
+  top: 79px;
+  display: flex;
+  background-color: var(--background);
+  padding: 16px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.search-bar__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-bar__input-field, select {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  fill: var(--background);
+}
+
+.search-bar__input-field input[type="text"], textarea:focus, select {
+  flex-grow: 1;
+  height: 72px;
+  color: var(--text-color);
+  background-color: var(--background);
+  border: none;
+  padding-left: 40px;
+
+}
+
+
+.search-bar__input-field input[type="text"], textarea:focus{
+  outline: none;
+  color: var(--fullText);
+}
+
+.search-bar__input-field input[type="checkbox"] {
+  margin-right: 18px;
+}
+
+.search-bar__hide-mobile {
+  background: var(--background);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 327px;
+  width: 100%;
+  padding: 30px 0;
+  flex-direction: column;
+  display: none;
+  z-index: 1;
+}
+
+.search-bar__hide-mobile.show {
+  display: flex;
+}
+
+.search-bar__hide-mobile .search-bar__input-field {
+  padding: 0 30px;
+}
+
+.search-bar__hide-mobile hr {
+  border: solid var(--dark-grey);
+  width: 100%;
+  border-width: 0.5px 0 0 0;
+  margin-bottom: 30px;
+}
+
+.search-bar__hide-mobile button {
+  margin-top: 30px;
+}
+
+.search-bar__show-mobile {
+  display: flex;
+}
+
+.search-bar__show-mobile button {
+  width: 56px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar__show-mobile__button--filter {
+  /* margin-right: 3px; */
+  fill: #6e8098;
+  background-color: var(--background);
+}
+
+.search-bar__show-mobile__button--search {
+  fill: var(--background);
+  background: var(--violet);
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--fullText);
+}
+
+@media only screen and (min-width: 500px) {
+  .search-bar {
+    width: auto;
+  }
+
+  .search-bar__show-mobile {
+    display: none;
+    z-index: 1;
+  }
+
+  .search-bar__hide-mobile {
+    position: relative;
+    border-radius: unset;
+    padding: unset;
+    flex-direction: row;
+    align-items: center;
+    width: unset;
+    max-width: unset;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: unset;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .search-bar__hide-mobile hr {
+    display: none;
+  }
+
+  .search-bar__hide-mobile hr {
+    display: none;
+  }
+
+  .search-bar__hide-mobile button {
+    margin-top: unset;
+  }
+
+  .search-bar__input-field {
+    flex-grow: 0;
+    border-right: 1px solid rgba(110, 128, 152, .2);
+  }
+
+  .search-bar__input-field--search{
+    flex-grow: 2;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+.search-button {
+  cursor: pointer;
+  border-style: none;
+  width: 123px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #939BF4;
+  ;
+}
+
+.search-button-text{
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+#full-time-checkbox {
+  position: relative;
+  top: 1px;
+  height: 24px;
+  width:  24px;
+  background-color: #cbd1d8;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+}
+
+
+
+/* LearnMore Button*/
+
+.button_LM {
+  position: relative;
+  padding-left: 47%;
+  top: 200px;
+  padding-bottom: 100px;
+}
+
+.LM-button {
+  cursor: pointer;
+  border-style: none;
+  width: 123px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #6766db;
+}
+
+.LM-button-text{
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+}
+
